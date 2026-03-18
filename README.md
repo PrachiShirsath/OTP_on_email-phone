@@ -3,47 +3,47 @@
 
 This project is a simple Python-based application that generates a One-Time Password (OTP) and sends it to a user via Email and Mobile Number. It is designed as part of a lab activity to demonstrate real-world authentication mechanisms.
 
-📌 Features
+📌 Features:
 
-🔢 Generates random OTP (4 to 8 digits)
+  🔢 Generates random OTP (4 to 8 digits)
 
-📧 Sends OTP to email using SMTP
+  📧 Sends OTP to email using SMTP
 
-📱 Sends OTP to mobile using Twilio API
+  📱 Sends OTP to mobile using Twilio API
 
-✅ Validates email format
+  ✅ Validates email format
 
-🔐 OTP verification system included
+  🔐 OTP verification system included
 
-☁️ Works on Google Colab
+  ☁️ Works on Google Colab
 
-🛠️ Technologies Used
+🛠️ Technologies Used:
 
-Python
+  Python
 
-smtplib (for email sending)
+  smtplib (for email sending)
 
-email-validator
+  email-validator
 
-Twilio API (for SMS)
+  Twilio API (for SMS)
 
-🚀 How It Works
+🚀 How It Works:
 
-User enters email and mobile number
+  User enters email and mobile number
 
-System generates a random OTP
+  System generates a random OTP
 
-OTP is sent:
+  OTP is sent:
 
-to email via SMTP
+  to email via SMTP
 
-to mobile via SMS API
+  to mobile via SMS API
 
-User enters received OTP
+  User enters received OTP
 
-System verifies the OTP
+  System verifies the OTP
 
-⚙️ Setup Instructions
+⚙️ Setup Instructions:
 1. Install Dependencies
 pip install email-validator twilio
 2. Configure Email
