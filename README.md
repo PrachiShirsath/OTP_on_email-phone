@@ -1,100 +1,80 @@
-# OTP_on_email-phone
-🔐 OTP Sender (Email + SMS) using Python
+# 🔐 OTP Sender (Email + SMS) using Python  
 
-This project is a simple Python-based application that generates a One-Time Password (OTP) and sends it to a user via Email and Mobile Number. It is designed as part of a lab activity to demonstrate real-world authentication mechanisms.
+## 📌 Project Overview  
+This project is a Python-based OTP (One-Time Password) authentication system that sends secure verification codes via **Email 📧** and **Mobile 📱**. It simulates real-world authentication systems used in login verification, account registration, and password recovery.
 
-📌 Features:
+---
 
-  🔢 Generates random OTP (4 to 8 digits)
+## 🚀 Key Features  
 
-  📧 Sends OTP to email using SMTP
+### 🔹 🔢 OTP Generation  
+- Generates random OTP (4–8 digits)  
+- Ensures secure and unique codes  
 
-  📱 Sends OTP to mobile using Twilio API
+---
 
-  ✅ Validates email format
+### 🔹 📧 Email Integration  
+- Sends OTP using Gmail SMTP  
+- Uses App Password for secure login  
 
-  🔐 OTP verification system included
+---
 
-  ☁️ Works on Google Colab
+### 🔹 📱 SMS Integration  
+- Sends OTP using Twilio API  
+- Supports real mobile verification  
 
-🛠️ Technologies Used:
+---
 
-  Python
+### 🔹 ✅ Input Validation  
+- Validates email format  
+- Prevents incorrect input  
 
-  smtplib (for email sending)
+---
 
-  email-validator
+### 🔹 🔐 OTP Verification  
+- User enters OTP  
+- System verifies correctness  
+- Displays success or failure  
 
-  Twilio API (for SMS)
+---
 
-🚀 How It Works:
+### 🔹 ☁️ Google Colab Support  
+- Fully runnable on Google Colab  
+- No local setup required  
 
-  User enters email and mobile number
+---
 
-  System generates a random OTP
+## 🧠 Technologies Used  
 
-  OTP is sent:
+- 🐍 Python  
+- 📧 smtplib (Email Sending)  
+- ✅ email-validator  
+- 📱 Twilio API  
 
-  to email via SMTP
+---
 
-  to mobile via SMS API
+## ⚙️ How It Works  
 
-  User enters received OTP
+1. 👤 User enters email and mobile number  
+2. 🔢 System generates OTP  
+3. 📤 OTP is sent via:  
+   - 📧 Email (SMTP)  
+   - 📱 SMS (Twilio)  
+4. ⌨️ User enters received OTP  
+5. 🔐 System verifies OTP  
 
-  System verifies the OTP
+---
 
-⚙️ Setup Instructions:
-1. Install Dependencies
-pip install email-validator twilio
-2. Configure Email
+## Sample output
 
-Enable 2-Step Verification in Gmail
+Enter Email: user@gmail.com  
+Enter Mobile: +919876543210  
+Generated OTP: 483920  
 
-Generate App Password
+✅ OTP sent to Email  
+✅ OTP sent to Mobile  
 
-Replace in code:
+Enter OTP: 483920  
+✅ Verified Successfully  
 
-sender_email = "your_email@gmail.com"
-sender_password = "your_app_password"
-
-
-3. Configure SMS (Twilio)
-
-Create account on Twilio
-
-Get:
-
-Account SID
-
-Auth Token
-
-Twilio Phone Number
-
-Replace in code:
-
-account_sid = "ACxxxxxxxx"
-auth_token = "your_token"
-twilio_number = "+1XXXXXXXXXX"
-▶️ Usage
-
-Run the program:
-
-python otp_sender.py
-
-Example:
-
-Enter Email: user@gmail.com
-Enter Mobile (+91...): +919876543210
-Generated OTP: 483920
-📸 Sample Output
-✅ OTP sent to Email
-✅ OTP sent to Mobile
-Enter received OTP: 483920
-✅ Verified Successfully
-⚠️ Notes
-
-Gmail requires App Password (not normal password)
-
-Twilio free account only works with verified numbers
-
-For testing, SMS can be simulated using print statements
+---
