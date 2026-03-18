@@ -56,6 +56,8 @@ Replace in code:
 
 sender_email = "your_email@gmail.com"
 sender_password = "your_app_password"
+
+
 3. Configure SMS (Twilio)
 
 Create account on Twilio
